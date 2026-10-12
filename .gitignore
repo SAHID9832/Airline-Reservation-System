@@ -1,0 +1,19 @@
+
+# Exclude the huge database backup
+vector_sky_complete_backup.sql
+
+# Keep secrets private
+.env
+.env.*
+!.env.example
+
+# Exclude dependencies and logs
+vendor/
+node_modules/
+*.log
+
+# Private database configuration
+config.php
+
+# Keep example configuration available
+!config.example.php
